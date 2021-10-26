@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLO VUE</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+      <h1 style="margin-left: 10cm; font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 50px;">TRYING SOME CONDITIONALS</h1>
+      <br>
+      <button v-on:click="error = !error"> Take an arrow to the knee</button>
+      <button style="background-color: green;" v-on:click="success = !success"> Reclamar premio</button>
+      <p style="font-family: 'Courier New', Courier, monospace; font-size: 25px;" v-if="success">Chavista el que lo lea</p>
+      <p style="font-family: 'Courier New', Courier, monospace; font-size: 25px;" v-else-if="error">I catch'd that Skyrim refference</p>
+     <!--- <p style="font-family: 'Courier New', Courier, monospace; font-size: 25px;" v-show="success">Chavista el que lo lea</p>
+      <p style="font-family: 'Courier New', Courier, monospace; font-size: 25px;" v-else-if="error">I catch'd that Skyrim refference</p>-->
+    </div>
+  </div>
+    <script src="app.js"></script>
+</body>
+</html>
